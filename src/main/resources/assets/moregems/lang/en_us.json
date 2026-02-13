@@ -1,0 +1,13 @@
+{
+  "itemGroup.moregems": "Example Mod Tab",
+  "block.moregems.example_block": "Example Block",
+  "item.moregems.example_item": "Example Item",
+
+  "moregems.configuration.title": "MoreGems Configs",
+  "moregems.configuration.section.moregems.common.toml": "MoreGems Configs",
+  "moregems.configuration.section.moregems.common.toml.title": "MoreGems Configs",
+  "moregems.configuration.items": "Item List",
+  "moregems.configuration.logDirtBlock": "Log Dirt Block",
+  "moregems.configuration.magicNumberIntroduction": "Magic Number Text",
+  "moregems.configuration.magicNumber": "Magic Number"
+}
