@@ -60,7 +60,8 @@ public class MoreGems {
             .withTabsBefore(CreativeModeTabs.COMBAT)
             .icon(() -> EXAMPLE_ITEM.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
-                output.accept(EXAMPLE_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
+                output.accept(EXAMPLE_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event'
+                output.accept(EXAMPLE_BLOCK_ITEM.get());
             }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
@@ -101,12 +102,12 @@ public class MoreGems {
         Config.ITEM_STRINGS.get().forEach((item) -> LOGGER.info("ITEM >> {}", item));
     }
 
-    // Add the example block item to the building blocks tab
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(EXAMPLE_BLOCK_ITEM);
-        }
-    }
+                // Add the example block item to the building blocks tab
+                private void addCreative(BuildCreativeModeTabContentsEvent event) {
+                    if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+                        event.accept(EXAMPLE_BLOCK_ITEM);
+                    }
+                }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
